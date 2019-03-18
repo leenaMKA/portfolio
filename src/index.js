@@ -1,12 +1,12 @@
 import Popper from "popper.js";
 require("bootstrap");
 
-var $root = $("html, body");
-var navMainHeight = $(".nav-main").outerHeight();
+const $root = $("html, body");
+const navMainHeight = $(".nav-main").outerHeight();
 
 $('a[href^="#"]').click(function(e) {
   e.preventDefault();
-  var href = $.attr(this, "href");
+  const href = $.attr(this, "href");
 
   $root.animate(
     {
