@@ -161,7 +161,7 @@ section {
 }
 
 .overview p {
-  line-height: 2;
+  line-height: 1.7;
   font-size: 20px;
   margin: 0 auto 126px;
   color: #909090;
@@ -209,6 +209,7 @@ section {
   margin-bottom: 3rem;
   display: inline-block;
 }
+
 // progress bars
 
 #skills {
@@ -230,6 +231,17 @@ section {
     padding-top: 2rem;
   }
 }
+.icon,
+.fa-9x {
+  font-size: 9em;
+  -webkit-transition: all 0.25s cubic-bezier(0.35, 0.26, 0.32, 0.96);
+  transition: all 0.25s ease 0s;
+}
+.icon,
+.fa-9x:hover {
+  font-size: 11em;
+}
+
 span {
   color: #909090;
 }
@@ -296,7 +308,8 @@ footer {
   color: #d6d3d3;
 }
 
-.fab {
+.fab,
+.fas {
   color: gold;
   &:hover {
     color: white;
