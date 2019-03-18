@@ -6,6 +6,7 @@ const navMainHeight = $(".nav-main").outerHeight();
 
 $('a[href^="#"]').click(function(e) {
   e.preventDefault();
+  console.log($.attr(this, "href"));
   const href = $.attr(this, "href");
 
   $root.animate(
@@ -17,3 +18,7 @@ $('a[href^="#"]').click(function(e) {
 
   return false;
 });
+
+//create the box, make it width 100, easy to click on
+// create the angle itself
+// when click on the angle, jump to the first next section

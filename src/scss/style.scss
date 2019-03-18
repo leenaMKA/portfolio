@@ -83,7 +83,49 @@ a.nav-link {
     font-size: 2.3rem;
   }
 }
+.angle.bottom {
+  border-width: 0 5px 5px 0;
+}
+.angle {
+  transform: rotate(45deg);
+  border: 0 solid gold;
+  width: 2.5em;
+  height: 2.5em;
+  text-indent: -999em;
+}
 
+//define the css animation
+a.scrollbutton[href="#about"] > div {
+  transform: translateY(0);
+  animation: MoveUpDown 4s ease-in-out infinite;
+}
+.p-4 {
+  padding: 2.5rem !important;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%,
+  to {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  to {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
 // end slider
 
 body > section {
@@ -140,15 +182,15 @@ section {
 }
 
 #projects {
-  background-color: #585855;
+  background-color: #383838;
   text-transform: uppercase;
 
   h3 {
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-top: 2rem;
   }
 }
@@ -164,7 +206,7 @@ section {
 }
 
 .album-item {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: inline-block;
 }
 // progress bars
@@ -175,6 +217,14 @@ section {
     font-size: 2rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.452);
     text-transform: uppercase;
     margin-bottom: 5rem;
     padding-top: 2rem;
@@ -196,14 +246,13 @@ span {
 #contact {
   background-color: #585855;
   text-transform: uppercase;
-  // min-height: calc(100vh - 34px);
 
   h3 {
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-top: 2rem;
   }
 }
@@ -249,8 +298,10 @@ footer {
 
 .fab {
   color: gold;
-  padding-right: 2rem;
   &:hover {
     color: white;
   }
+}
+.bottom {
+  bottom: 0;
 }
