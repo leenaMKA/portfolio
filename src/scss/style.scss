@@ -5,6 +5,12 @@
 
 body {
   background-color: black;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
 }
 
 // start navbar
@@ -80,9 +86,7 @@ a.nav-link {
 
 // end slider
 
-.overview,
-#photos,
-#contact-form {
+.overview {
   padding: 50px;
 
   @include media-breakpoint-up(md) {
@@ -91,7 +95,14 @@ a.nav-link {
 }
 
 //  JUMBOTRON
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
 .overview {
+  min-height: calc(100vh + 14px);
   background-color: #0e0e0e;
 
   .image {
@@ -130,7 +141,7 @@ a.nav-link {
   min-height: 1px;
 }
 
-#photos {
+#projects {
   background-color: #585855;
   text-transform: uppercase;
 
@@ -160,7 +171,7 @@ a.nav-link {
 }
 // progress bars
 
-#progress-bars {
+#skills {
   background-color: #0e0e0e;
   padding: 100px;
   h3 {
@@ -168,7 +179,7 @@ a.nav-link {
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding-top: 2rem;
   }
 }
@@ -185,9 +196,10 @@ span {
   padding-bottom: 80px;
 }
 
-#contact-form {
+#contact {
   background-color: #585855;
   text-transform: uppercase;
+  // min-height: calc(100vh - 34px);
 
   h3 {
     font-size: 2rem;
@@ -203,7 +215,9 @@ textarea.form-control {
   margin: 0 auto 85px;
 }
 
-#contact-form button {
+#contact button {
+  position: relative;
+  bottom: 50px;
   border: 2px solid gold;
   background: transparent;
   padding: 0px 20px;
@@ -213,6 +227,7 @@ textarea.form-control {
 }
 
 .form-control {
+  height: 100vh;
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
