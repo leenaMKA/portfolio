@@ -140,6 +140,32 @@ body > section {
 
 section {
   width: 100%;
+  min-height: 100vh;
+}
+
+#contact {
+  min-height: calc(100vh - 60px);
+}
+
+// footer {
+//   height: 60px;
+// }
+
+#home {
+  min-height: 100vh;
+  background-image: url("/img/building0 .jpg");
+  background-size: cover;
+
+  img {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #about .image-col {
+    order: -1;
+    padding-bottom: 20px;
+  }
 }
 
 .overview {
@@ -167,13 +193,16 @@ section {
   color: #909090;
 }
 
-.overview button {
-  border: 3px solid gold;
+.overview .button {
+  position: relative;
+  bottom: 50px;
+  border: 2px solid gold;
   background: transparent;
-  padding: 0px 20px;
+  padding: 5px 20px 5px 20px;
   margin-bottom: 20px;
   color: white;
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 1rem;
 }
 .overview-photo {
   position: relative;
@@ -196,7 +225,7 @@ section {
 }
 
 .img-thumbnail {
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   max-width: 100%;
   height: auto;
   padding: 0.25rem;
