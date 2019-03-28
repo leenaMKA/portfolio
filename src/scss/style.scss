@@ -61,6 +61,7 @@ a.nav-link {
 #carousal {
   position: relative;
 }
+
 .overlay-title {
   position: absolute;
   top: 55%;
@@ -129,10 +130,8 @@ a.scrollbutton[href="#about"] > div {
 // end slider
 
 body > section {
-  padding: 50px;
-
   @include media-breakpoint-up(md) {
-    padding: 100px;
+    // padding: 100px;
   }
 }
 
@@ -144,7 +143,7 @@ section {
 }
 
 #contact {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px - 86px);
 }
 
 // footer {
@@ -182,7 +181,7 @@ section {
     font-size: 2rem;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
   }
 }
 
@@ -220,8 +219,10 @@ section {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 5rem;
-    padding-top: 2rem;
   }
+}
+.project-link {
+  color: rgb(255, 255, 255);
 }
 
 .img-thumbnail {
@@ -261,8 +262,8 @@ section {
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -273,12 +274,21 @@ section {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+
+  .content-title {
+    text-decoration: none !important;
+  }
 }
+
+.project-link {
+  color: white !important;
+}
+
 .album-item:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
-  h5 {
+  .content-title {
     color: rgb(255, 255, 255);
     font-weight: 500;
     letter-spacing: 0.15em;
@@ -312,7 +322,6 @@ section {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     margin-bottom: 5rem;
-    padding-top: 2rem;
   }
   h2 {
     font-size: 2rem;
@@ -347,6 +356,10 @@ span {
   padding-bottom: 80px;
 }
 
+.imgHeight {
+  height: 60px;
+}
+
 #contact {
   background-color: #585855;
   text-transform: uppercase;
@@ -356,8 +369,7 @@ span {
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    margin-bottom: 5rem;
-    padding-top: 2rem;
+    margin-bottom: 3rem;
   }
 }
 textarea.form-control {
@@ -371,7 +383,6 @@ textarea.form-control {
   border: 2px solid gold;
   background: transparent;
   padding: 0px 20px;
-  margin-bottom: 20px;
   color: white;
   font-size: 20px;
 }

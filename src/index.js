@@ -4,6 +4,31 @@ require("bootstrap");
 const $root = $("html, body");
 const navMainHeight = $(".nav-main").outerHeight();
 
+$("#send-id").click(function() {
+  let newMessage = {
+    name: $("#name").val(),
+    email: $("#email").val(),
+    message: $("message").val()
+  };
+  $.ajax({
+    url: "http://please ",
+    type: "POST",
+    data: JSON.stringify(newMessage),
+    dataType: "json",
+    contentType: "application/json",
+    success: function(response) {
+      console.log("response", response);
+    },
+    error: function(xhr, status, error) {
+      console.log(`
+        error:${error},
+        status:${status},
+        xhr:${JSON.stringify(xhr)}
+        `);
+    }
+  });
+});
+
 $('a[href^="#"]').click(function(e) {
   e.preventDefault();
   console.log($.attr(this, "href"));
