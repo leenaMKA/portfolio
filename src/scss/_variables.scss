@@ -2,3 +2,12 @@
  * You find the variables set by Bootstrap in the file:
  * /node_modules/bootstrap/scss/_variables.scss
  */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1920px
+);

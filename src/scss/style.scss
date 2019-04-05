@@ -153,8 +153,24 @@ section {
 
 #home {
   min-height: 100vh;
-  background-image: url("/img/building0 .jpg");
+  background-image: url("/img/building-w768.jpg");
   background-size: cover;
+
+  @include media-breakpoint-up(md) {
+    background-image: url("/img/building-w992.jpg");
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url("/img/building-w1200.jpg");
+  }
+  @include media-breakpoint-up(xl) {
+    background-image: url("/img/building-w1500.jpg");
+  }
+  @include media-breakpoint-up(xxl) {
+    background-image: url("/img/building-w1920.jpg");
+  }
+  @include media-breakpoint-up(xxxl) {
+    background-image: url("/img/building-w4928.jpg");
+  }
 
   img {
     min-height: 100vh;
