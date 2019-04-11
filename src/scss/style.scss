@@ -355,9 +355,13 @@ section {
   -webkit-transition: all 0.25s cubic-bezier(0.35, 0.26, 0.32, 0.96);
   transition: all 0.25s ease 0s;
 }
-.icon,
-.fa-9x:hover {
-  font-size: 11em;
+
+.icon-item {
+  &:hover {
+    -webkit-transition: all 0.25s cubic-bezier(0.35, 0.26, 0.32, 0.96);
+    transform: scale(1.2);
+    filter: brightness(100);
+  }
 }
 
 span {
