@@ -168,9 +168,6 @@ section {
   @include media-breakpoint-up(xxl) {
     background-image: url("/img/building-w1920.jpg");
   }
-  @include media-breakpoint-up(xxxl) {
-    background-image: url("/img/building-w4928.jpg");
-  }
 
   img {
     min-height: 100vh;
